@@ -57,3 +57,23 @@ Copy-Item -Recurse D:\projects\skills\diagram C:\Users\il\.agents\skills\diagram
 ## Skills included
 
 - `diagram` - Convert long, dense, or complex text into a Mermaid diagram. Renders to SVG via pele. Invoke with `/diagram`.
+
+## Install with npx skills add
+
+This folder is compatible with the `skills` CLI, so it can be installed with:
+
+```sh
+# From a local path
+npx skills add D:\projects\skills
+
+# From a GitHub repository (after pushing this folder to GitHub)
+npx skills add <owner>/<repo>
+
+# Install a specific skill only
+npx skills add D:\projects\skills --skill diagram
+
+# Install globally (user-level) without prompts
+npx skills add D:\projects\skills --skill diagram -g -y
+```
+
+Verified locally: `npx skills add . --list` discovers the `diagram` skill, and a full install succeeds across agents (OpenCode, Claude Code, Cursor, and more).
