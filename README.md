@@ -67,7 +67,7 @@ This folder is compatible with the `skills` CLI, so it can be installed with:
 npx skills add D:\projects\skills
 
 # From a GitHub repository (after pushing this folder to GitHub)
-npx skills add <owner>/<repo>
+npx skills add naterminch/skills
 
 # Install a specific skill only
 npx skills add D:\projects\skills --skill diagram
